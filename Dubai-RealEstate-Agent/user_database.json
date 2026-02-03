@@ -1,0 +1,36 @@
+{
+  "demo_user": {
+    "user_id": "USER_001",
+    "name": "Ahmed Al Mansoori",
+    "email": "ahmed.mansoori@example.com",
+    "phone": "+971-50-123-4567",
+    "registration_date": "2026-01-15",
+    "user_type": "registered",
+    "profile": {
+      "budget_min_aed": 8000000,
+      "budget_max_aed": 18000000,
+      "preferred_locations": ["Palm Jumeirah", "Dubai Marina", "Business Bay"],
+      "property_type_preference": ["Villa", "Penthouse"],
+      "category_interest": "Residential",
+      "listing_type_interest": "Buy",
+      "bedrooms_min": 4,
+      "bedrooms_max": 6,
+      "must_have_features": ["Sea View", "Private Pool", "Smart Home"],
+      "lifestyle_preferences": ["Beachfront", "Luxury Amenities", "Family Friendly"]
+    },
+    "browsing_history": [
+      {"property_id": "PJ_V001", "viewed_on": "2026-02-01", "time_spent_seconds": 180},
+      {"property_id": "DM_V001", "viewed_on": "2026-02-01", "time_spent_seconds": 145},
+      {"property_id": "PJ_P001", "viewed_on": "2026-02-02", "time_spent_seconds": 220},
+      {"property_id": "BB_P001", "viewed_on": "2026-02-02", "time_spent_seconds": 95},
+      {"property_id": "DM_P001", "viewed_on": "2026-02-03", "time_spent_seconds": 160}
+    ],
+    "saved_properties": ["PJ_V001", "PJ_P001"],
+    "past_interactions": [
+      {"query": "luxury villas in Palm Jumeirah", "timestamp": "2026-02-01 10:30:00"},
+      {"query": "what is the average price in Dubai Marina", "timestamp": "2026-02-01 14:20:00"},
+      {"query": "penthouses with sea views", "timestamp": "2026-02-02 09:15:00"}
+    ],
+    "preferences_updated": "2026-02-03"
+  }
+}

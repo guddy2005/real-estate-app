@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dubai Real Estate GPT Advisor</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; margin: 0; padding: 20px; display: flex; justify-content: center; align-items: center; height: 100vh; }
+        .chat-container { width: 100%; max-width: 800px; height: 80vh; background: white; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); display: flex; flex-direction: column; overflow: hidden; }
+        .chat-header { background: #1a237e; color: white; padding: 20px; text-align: center; }
+        .chat-messages { flex: 1; overflow-y: auto; padding: 20px; display: flex; flex-direction: column; gap: 15px; }
+        .message { max-width: 80%; padding: 12px 16px; border-radius: 15px; line-height: 1.5; }
+        .ai { background: #e8eaf6; align-self: flex-start; color: #1a237e; }
+        .user { background: #1a237e; align-self: flex-end; color: white; }
+        .property-card { background: white; border: 1px solid #ddd; border-radius: 8px; padding: 15px; margin-top: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.05); }
+        .property-card h4 { margin: 0 0 10px 0; color: #1a237e; }
+        .price { color: #2e7d32; font-weight: bold; }
+        .chat-input { display: flex; padding: 20px; border-top: 1px solid #eee; gap: 10px; }
+        input { flex: 1; padding: 12px; border: 1px solid #ddd; border-radius: 25px; outline: none; }
+        button { background: #1a237e; color: white; border: none; padding: 10px 25px; border-radius: 25px; cursor: pointer; transition: background 0.3s; }
+        button:hover { background: #283593; }
+        .user-toggle { padding: 10px; text-align: center; background: #fafafa; border-bottom: 1px solid #eee; }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h2>Dubai Real Estate GPT Advisor</h2>
+        </div>
+        <div class="user-toggle">
+            <label><input type="radio" name="user_type" value="guest" checked> Guest</label>
+            <label style="margin-left: 20px;"><input type="radio" name="user_type" value="registered"> Registered (Demo)</label>
+        </div>
+        <div id="messages" class="chat-messages">
+            <div class="message ai">Hello! I'm your Dubai Real Estate expert. How can I help you find your dream property today?</div>
+        </div>
+        <form id="chat-form" class="chat-input">
+            <input type="text" id="user-input" placeholder="Ask about properties, areas, or investments..." required autocomplete="off">
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <script>
+        const form = document.getElementById('chat-form');
+        const input = document.getElementById('user-input');
+        const messagesDiv = document.getElementById('messages');
+
+        form.onsubmit = async (e) => {
+            e.preventDefault();
+            const message = input.value.trim();
+            if (!message) return;
+
+            const userType = document.querySelector('input[name="user_type"]:checked').value;
+
+            // Add user message
+            addMessage(message, 'user');
+            input.value = '';
+
+            try {
+                const response = await fetch('/chat', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ message, user_type: userType })
+                });
+                const data = await response.json();
+                addMessage(data.response, 'ai', true);
+            } catch (error) {
+                addMessage('Sorry, something went wrong. Please try again.', 'ai');
+            }
+        };
+
+        function addMessage(text, type, isHtml = false) {
+            const div = document.createElement('div');
+            div.className = `message ${type}`;
+            if (isHtml) {
+                div.innerHTML = text.replace(/\n/g, '<br>');
+            } else {
+                div.textContent = text;
+            }
+            messagesDiv.appendChild(div);
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+        }
+    </script>
+</body>
+</html>
