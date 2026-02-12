@@ -1,4 +1,26 @@
+entrypoint = "main.py"
 modules = ["python-3.11"]
+
+[nix]
+channel = "stable-25_05"
+
+[unitTest]
+language = "python3"
+
+[gitHubImport]
+requiredFiles = [".replit", "replit.nix"]
+
+[deployment]
+run = ["python3", "main.py"]
+deploymentTarget = "cloudrun"
+
+[agent]
+expertMode = true
+
+[[ports]]
+localPort = 5000
+externalPort = 80
+
 [workflows]
 runButton = "Project"
 
@@ -9,26 +31,16 @@ author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "workflow.run"
-args = "Start application"
+args = "Flask Server"
 
 [[workflows.workflow]]
-name = "Start application"
+name = "Flask Server"
 author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "cd Dubai-RealEstate-Agent && python main.py"
+args = "python main.py"
 waitForPort = 5000
 
 [workflows.workflow.metadata]
 outputType = "webview"
-
-[nix]
-channel = "stable-25_05"
-
-[agent]
-expertMode = true
-
-[[ports]]
-localPort = 5000
-externalPort = 5000
