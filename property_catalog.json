@@ -17,10 +17,31 @@
           "price_usd": 7620000,
           "listing_type": "Buy",
           "status": "Ready",
-          "features": ["Private Pool", "Garden", "Maid Room", "Smart Home", "Security System", "Private Parking"],
+          "features": [
+            "Private Pool",
+            "Garden",
+            "Maid Room",
+            "Smart Home",
+            "Security System",
+            "Private Parking"
+          ],
           "description": "Ultra-luxury 5-bedroom villa with stunning Burj Khalifa views, private pool, and premium finishes throughout.",
-          "amenities": ["Gym", "Spa", "Concierge", "Valet Parking"],
-          "nearby": ["Burj Khalifa - 2 min", "Dubai Mall - 5 min", "Business Bay Metro - 8 min"]
+          "amenities": [
+            "Gym",
+            "Spa",
+            "Concierge",
+            "Valet Parking"
+          ],
+          "images": [
+            "/assests/1.jpg",
+            "/assests/10.jpg",
+            "/assests/11.jpg"
+          ],
+          "nearby": [
+            "Burj Khalifa - 2 min",
+            "Dubai Mall - 5 min",
+            "Business Bay Metro - 8 min"
+          ]
         },
         {
           "id": "DD_P001",
@@ -34,10 +55,31 @@
           "price_usd": 6530000,
           "listing_type": "Buy",
           "status": "Ready",
-          "features": ["Panoramic Views", "Private Elevator", "Rooftop Terrace", "Jacuzzi", "Smart Home", "Premium Appliances"],
+          "features": [
+            "Panoramic Views",
+            "Private Elevator",
+            "Rooftop Terrace",
+            "Jacuzzi",
+            "Smart Home",
+            "Premium Appliances"
+          ],
           "description": "Stunning 4-bedroom penthouse on the 48th floor with 360-degree views of Downtown Dubai and the Arabian Gulf.",
-          "amenities": ["Infinity Pool", "Private Cinema", "Wine Cellar", "Butler Service"],
-          "nearby": ["Dubai Opera - 3 min", "Souk Al Bahar - 4 min", "DIFC - 10 min"]
+          "amenities": [
+            "Infinity Pool",
+            "Private Cinema",
+            "Wine Cellar",
+            "Butler Service"
+          ],
+          "images": [
+            "/assests/12.jpg",
+            "/assests/13.jpg",
+            "/assests/14.jpg"
+          ],
+          "nearby": [
+            "Dubai Opera - 3 min",
+            "Souk Al Bahar - 4 min",
+            "DIFC - 10 min"
+          ]
         },
         {
           "id": "DD_D001",
@@ -51,10 +93,30 @@
           "price_usd": 2585000,
           "listing_type": "Buy",
           "status": "Ready",
-          "features": ["Double Height Ceiling", "Private Terrace", "Modern Kitchen", "Built-in Wardrobes", "Balcony"],
+          "features": [
+            "Double Height Ceiling",
+            "Private Terrace",
+            "Modern Kitchen",
+            "Built-in Wardrobes",
+            "Balcony"
+          ],
           "description": "Elegant 3-bedroom duplex with modern design, double-height living area, and premium location.",
-          "amenities": ["Pool", "Gym", "Children's Play Area", "Retail Shops"],
-          "nearby": ["Address Downtown - Walking Distance", "Dubai Fountain - 2 min", "Dubai Mall Metro - 6 min"]
+          "amenities": [
+            "Pool",
+            "Gym",
+            "Children's Play Area",
+            "Retail Shops"
+          ],
+          "images": [
+            "/assests/15.jpg",
+            "/assests/16.jpg",
+            "/assests/17.jpg"
+          ],
+          "nearby": [
+            "Address Downtown - Walking Distance",
+            "Dubai Fountain - 2 min",
+            "Dubai Mall Metro - 6 min"
+          ]
         },
         {
           "id": "DD_A001",
@@ -69,10 +131,30 @@
           "listing_type": "Rent",
           "rent_annual_aed": 160000,
           "status": "Ready",
-          "features": ["Fountain View", "Modern Fitted Kitchen", "Built-in Wardrobes", "Balcony", "Covered Parking"],
+          "features": [
+            "Fountain View",
+            "Modern Fitted Kitchen",
+            "Built-in Wardrobes",
+            "Balcony",
+            "Covered Parking"
+          ],
           "description": "Beautiful 2-bedroom apartment with direct views of the iconic Dubai Fountain and Burj Khalifa.",
-          "amenities": ["Swimming Pool", "Gym", "Steam Room", "24/7 Security"],
-          "nearby": ["Dubai Mall - Walking Distance", "Restaurants - Ground Floor", "Metro - 5 min"]
+          "amenities": [
+            "Swimming Pool",
+            "Gym",
+            "Steam Room",
+            "24/7 Security"
+          ],
+          "images": [
+            "/assests/18.jpg",
+            "/assests/19.jpg",
+            "/assests/2.jpg"
+          ],
+          "nearby": [
+            "Dubai Mall - Walking Distance",
+            "Restaurants - Ground Floor",
+            "Metro - 5 min"
+          ]
         },
         {
           "id": "DD_C001",
@@ -85,10 +167,31 @@
           "listing_type": "Lease",
           "lease_annual_aed": 650000,
           "status": "Ready",
-          "features": ["Fitted Office", "Meeting Rooms", "Pantry", "Server Room", "Premium Finishes", "Floor to Ceiling Windows"],
+          "features": [
+            "Fitted Office",
+            "Meeting Rooms",
+            "Pantry",
+            "Server Room",
+            "Premium Finishes",
+            "Floor to Ceiling Windows"
+          ],
           "description": "Prime commercial office space in Boulevard Plaza with stunning views and premium fit-out.",
-          "amenities": ["Reception Area", "High Speed Internet", "Central AC", "Security"],
-          "nearby": ["DIFC - 8 min", "Business Bay - 5 min", "Metro Access - 4 min"]
+          "amenities": [
+            "Reception Area",
+            "High Speed Internet",
+            "Central AC",
+            "Security"
+          ],
+          "images": [
+            "/assests/20.jpg",
+            "/assests/21.jpg",
+            "/assests/22.jpg"
+          ],
+          "nearby": [
+            "DIFC - 8 min",
+            "Business Bay - 5 min",
+            "Metro Access - 4 min"
+          ]
         }
       ]
     },
@@ -109,10 +212,31 @@
           "price_usd": 4900000,
           "listing_type": "Buy",
           "status": "Ready",
-          "features": ["Marina View", "Private Beach Access", "Pool", "Garden", "Maid Room", "Driver Room"],
+          "features": [
+            "Marina View",
+            "Private Beach Access",
+            "Pool",
+            "Garden",
+            "Maid Room",
+            "Driver Room"
+          ],
           "description": "Exclusive 4-bedroom villa with direct marina access, private pool, and beach lifestyle.",
-          "amenities": ["Private Marina Berth", "Beach Club Access", "Gym", "Spa"],
-          "nearby": ["JBR Beach - 5 min", "Dubai Marina Mall - 3 min", "Marina Walk - 2 min"]
+          "amenities": [
+            "Private Marina Berth",
+            "Beach Club Access",
+            "Gym",
+            "Spa"
+          ],
+          "images": [
+            "/assests/23.jpg",
+            "/assests/24.jpg",
+            "/assests/25.jpg"
+          ],
+          "nearby": [
+            "JBR Beach - 5 min",
+            "Dubai Marina Mall - 3 min",
+            "Marina Walk - 2 min"
+          ]
         },
         {
           "id": "DM_P001",
@@ -126,10 +250,31 @@
           "price_usd": 3400000,
           "listing_type": "Buy",
           "status": "Ready",
-          "features": ["Waterfront View", "Private Pool", "Terrace", "Smart Home", "Premium Finishes", "Wine Cellar"],
+          "features": [
+            "Waterfront View",
+            "Private Pool",
+            "Terrace",
+            "Smart Home",
+            "Premium Finishes",
+            "Wine Cellar"
+          ],
           "description": "Spectacular 3-bedroom penthouse in the iconic twisting Cayan Tower with private pool and marina views.",
-          "amenities": ["Infinity Pool", "State-of-art Gym", "Sauna", "24/7 Concierge"],
-          "nearby": ["Marina Promenade - Walking Distance", "Restaurants - Ground Floor", "Metro - 10 min"]
+          "amenities": [
+            "Infinity Pool",
+            "State-of-art Gym",
+            "Sauna",
+            "24/7 Concierge"
+          ],
+          "images": [
+            "/assests/3.jpg",
+            "/assests/4.jpg",
+            "/assests/5.jpg"
+          ],
+          "nearby": [
+            "Marina Promenade - Walking Distance",
+            "Restaurants - Ground Floor",
+            "Metro - 10 min"
+          ]
         },
         {
           "id": "DM_D001",
@@ -144,10 +289,30 @@
           "listing_type": "Buy",
           "status": "Under Construction",
           "completion_date": "Q4 2026",
-          "features": ["Marina View", "Double Height Living", "Modern Kitchen", "Balconies", "Storage Room"],
+          "features": [
+            "Marina View",
+            "Double Height Living",
+            "Modern Kitchen",
+            "Balconies",
+            "Storage Room"
+          ],
           "description": "Contemporary 3-bedroom duplex with stunning marina views and modern lifestyle amenities.",
-          "amenities": ["Rooftop Pool", "BBQ Area", "Gym", "Kids Play Area"],
-          "nearby": ["Dubai Marina Mall - 8 min", "Tram Station - 5 min", "Beach - 10 min"]
+          "amenities": [
+            "Rooftop Pool",
+            "BBQ Area",
+            "Gym",
+            "Kids Play Area"
+          ],
+          "images": [
+            "/assests/6.jpg",
+            "/assests/7.jpg",
+            "/assests/8.jpg"
+          ],
+          "nearby": [
+            "Dubai Marina Mall - 8 min",
+            "Tram Station - 5 min",
+            "Beach - 10 min"
+          ]
         },
         {
           "id": "DM_A001",
@@ -162,10 +327,30 @@
           "listing_type": "Rent",
           "rent_annual_aed": 95000,
           "status": "Ready",
-          "features": ["Marina View", "Fitted Kitchen", "Built-in Wardrobes", "Balcony", "Parking"],
+          "features": [
+            "Marina View",
+            "Fitted Kitchen",
+            "Built-in Wardrobes",
+            "Balcony",
+            "Parking"
+          ],
           "description": "Cozy 1-bedroom apartment with beautiful marina views, perfect for professionals and couples.",
-          "amenities": ["Swimming Pool", "Gym", "Sauna", "Security"],
-          "nearby": ["Marina Walk - 3 min", "Supermarket - 2 min", "Metro - 8 min"]
+          "amenities": [
+            "Swimming Pool",
+            "Gym",
+            "Sauna",
+            "Security"
+          ],
+          "images": [
+            "/assests/9.jpg",
+            "/assests/1.jpg",
+            "/assests/10.jpg"
+          ],
+          "nearby": [
+            "Marina Walk - 3 min",
+            "Supermarket - 2 min",
+            "Metro - 8 min"
+          ]
         },
         {
           "id": "DM_C001",
@@ -178,10 +363,30 @@
           "listing_type": "Lease",
           "lease_annual_aed": 380000,
           "status": "Ready",
-          "features": ["Marina View", "Fitted", "Meeting Room", "Pantry", "Parking Spaces"],
+          "features": [
+            "Marina View",
+            "Fitted",
+            "Meeting Room",
+            "Pantry",
+            "Parking Spaces"
+          ],
           "description": "Premium office space overlooking Dubai Marina, ideal for growing businesses.",
-          "amenities": ["High Speed Internet", "Central AC", "Security", "Visitor Parking"],
-          "nearby": ["Marina Mall - 2 min", "Metro - 6 min", "Restaurants - Walking Distance"]
+          "amenities": [
+            "High Speed Internet",
+            "Central AC",
+            "Security",
+            "Visitor Parking"
+          ],
+          "images": [
+            "/assests/11.jpg",
+            "/assests/12.jpg",
+            "/assests/13.jpg"
+          ],
+          "nearby": [
+            "Marina Mall - 2 min",
+            "Metro - 6 min",
+            "Restaurants - Walking Distance"
+          ]
         }
       ]
     },
@@ -202,10 +407,33 @@
           "price_usd": 9525000,
           "listing_type": "Buy",
           "status": "Ready",
-          "features": ["Beachfront", "Private Beach", "Pool", "Garden", "Elevator", "Maid Quarters", "Driver Room", "Cinema Room"],
+          "features": [
+            "Beachfront",
+            "Private Beach",
+            "Pool",
+            "Garden",
+            "Elevator",
+            "Maid Quarters",
+            "Driver Room",
+            "Cinema Room"
+          ],
           "description": "Magnificent 6-bedroom beachfront villa on Palm Jumeirah frond with private beach, pool, and luxury finishes.",
-          "amenities": ["Private Beach", "Boat Dock", "Gym", "Home Automation"],
-          "nearby": ["Atlantis - 5 min", "Nakheel Mall - 8 min", "Restaurants - Walking Distance"]
+          "amenities": [
+            "Private Beach",
+            "Boat Dock",
+            "Gym",
+            "Home Automation"
+          ],
+          "images": [
+            "/assests/14.jpg",
+            "/assests/15.jpg",
+            "/assests/16.jpg"
+          ],
+          "nearby": [
+            "Atlantis - 5 min",
+            "Nakheel Mall - 8 min",
+            "Restaurants - Walking Distance"
+          ]
         },
         {
           "id": "PJ_P001",
@@ -219,10 +447,32 @@
           "price_usd": 8710000,
           "listing_type": "Buy",
           "status": "Ready",
-          "features": ["Sea View", "Private Pool", "Rooftop Terrace", "Jacuzzi", "BBQ Area", "Premium Appliances", "Smart Home"],
+          "features": [
+            "Sea View",
+            "Private Pool",
+            "Rooftop Terrace",
+            "Jacuzzi",
+            "BBQ Area",
+            "Premium Appliances",
+            "Smart Home"
+          ],
           "description": "Ultra-luxury 4-bedroom penthouse with private rooftop pool, breathtaking sea views, and 5-star amenities.",
-          "amenities": ["Beach Access", "Infinity Pool", "Spa", "Concierge Service"],
-          "nearby": ["Beach - Direct Access", "Golden Mile - 2 min", "Palm Monorail - 5 min"]
+          "amenities": [
+            "Beach Access",
+            "Infinity Pool",
+            "Spa",
+            "Concierge Service"
+          ],
+          "images": [
+            "/assests/17.jpg",
+            "/assests/18.jpg",
+            "/assests/19.jpg"
+          ],
+          "nearby": [
+            "Beach - Direct Access",
+            "Golden Mile - 2 min",
+            "Palm Monorail - 5 min"
+          ]
         },
         {
           "id": "PJ_D001",
@@ -236,10 +486,31 @@
           "price_usd": 2993000,
           "listing_type": "Buy",
           "status": "Ready",
-          "features": ["Sea View", "Double Height", "Terrace", "Premium Finishes", "Study Room", "Storage"],
+          "features": [
+            "Sea View",
+            "Double Height",
+            "Terrace",
+            "Premium Finishes",
+            "Study Room",
+            "Storage"
+          ],
           "description": "Elegant 3-bedroom duplex with spectacular sea views and resort-style living on The Palm.",
-          "amenities": ["Private Beach", "Pool", "Gym", "Children's Pool"],
-          "nearby": ["The Pointe - 10 min", "West Beach - 5 min", "Restaurants - Ground Floor"]
+          "amenities": [
+            "Private Beach",
+            "Pool",
+            "Gym",
+            "Children's Pool"
+          ],
+          "images": [
+            "/assests/2.jpg",
+            "/assests/20.jpg",
+            "/assests/21.jpg"
+          ],
+          "nearby": [
+            "The Pointe - 10 min",
+            "West Beach - 5 min",
+            "Restaurants - Ground Floor"
+          ]
         },
         {
           "id": "PJ_A001",
@@ -254,10 +525,30 @@
           "listing_type": "Rent",
           "rent_annual_aed": 220000,
           "status": "Ready",
-          "features": ["Sea View", "Beach Access", "Balcony", "Fitted Kitchen", "Parking"],
+          "features": [
+            "Sea View",
+            "Beach Access",
+            "Balcony",
+            "Fitted Kitchen",
+            "Parking"
+          ],
           "description": "Luxurious 2-bedroom apartment with direct beach access and stunning Arabian Gulf views.",
-          "amenities": ["Private Beach", "Swimming Pools", "Gym", "Spa"],
-          "nearby": ["Beach - 1 min", "Atlantis - 8 min", "Nakheel Mall - 10 min"]
+          "amenities": [
+            "Private Beach",
+            "Swimming Pools",
+            "Gym",
+            "Spa"
+          ],
+          "images": [
+            "/assests/22.jpg",
+            "/assests/23.jpg",
+            "/assests/24.jpg"
+          ],
+          "nearby": [
+            "Beach - 1 min",
+            "Atlantis - 8 min",
+            "Nakheel Mall - 10 min"
+          ]
         },
         {
           "id": "PJ_C001",
@@ -270,10 +561,30 @@
           "listing_type": "Lease",
           "lease_annual_aed": 550000,
           "status": "Ready",
-          "features": ["Sea View", "Fitted Office", "Meeting Rooms", "Pantry", "Premium Location"],
+          "features": [
+            "Sea View",
+            "Fitted Office",
+            "Meeting Rooms",
+            "Pantry",
+            "Premium Location"
+          ],
           "description": "Prestigious commercial office space on Palm Jumeirah's Golden Mile with unparalleled sea views.",
-          "amenities": ["Parking", "Security", "High Speed Internet", "Central AC"],
-          "nearby": ["Golden Mile Galleria - Ground Floor", "Hotels - Walking Distance", "Beach Access"]
+          "amenities": [
+            "Parking",
+            "Security",
+            "High Speed Internet",
+            "Central AC"
+          ],
+          "images": [
+            "/assests/25.jpg",
+            "/assests/3.jpg",
+            "/assests/4.jpg"
+          ],
+          "nearby": [
+            "Golden Mile Galleria - Ground Floor",
+            "Hotels - Walking Distance",
+            "Beach Access"
+          ]
         }
       ]
     },
@@ -295,10 +606,31 @@
           "listing_type": "Buy",
           "status": "Under Construction",
           "completion_date": "Q2 2027",
-          "features": ["Canal View", "Private Pool", "Garden", "Smart Home", "Maid Room", "Private Parking"],
+          "features": [
+            "Canal View",
+            "Private Pool",
+            "Garden",
+            "Smart Home",
+            "Maid Room",
+            "Private Parking"
+          ],
           "description": "Exclusive 5-bedroom villa overlooking the Business Bay Canal with contemporary design and luxury finishes.",
-          "amenities": ["Marina Berth", "Gym", "Concierge", "Security"],
-          "nearby": ["Burj Khalifa - 8 min", "DIFC - 5 min", "Business Bay Metro - 3 min"]
+          "amenities": [
+            "Marina Berth",
+            "Gym",
+            "Concierge",
+            "Security"
+          ],
+          "images": [
+            "/assests/5.jpg",
+            "/assests/6.jpg",
+            "/assests/7.jpg"
+          ],
+          "nearby": [
+            "Burj Khalifa - 8 min",
+            "DIFC - 5 min",
+            "Business Bay Metro - 3 min"
+          ]
         },
         {
           "id": "BB_P001",
@@ -313,10 +645,31 @@
           "listing_type": "Buy",
           "status": "Under Construction",
           "completion_date": "Q1 2027",
-          "features": ["Sky Pool", "Car Elevator", "Rooftop Terrace", "Private Spa", "Smart Home", "Branded Residence"],
+          "features": [
+            "Sky Pool",
+            "Car Elevator",
+            "Rooftop Terrace",
+            "Private Spa",
+            "Smart Home",
+            "Branded Residence"
+          ],
           "description": "Ultra-exclusive Bugatti-branded penthouse with private car elevator to your unit, sky pool, and unmatched luxury.",
-          "amenities": ["Private Elevator", "Valet Service", "Spa", "Concierge"],
-          "nearby": ["Downtown - 5 min", "DIFC - 3 min", "Dubai Mall - 10 min"]
+          "amenities": [
+            "Private Elevator",
+            "Valet Service",
+            "Spa",
+            "Concierge"
+          ],
+          "images": [
+            "/assests/8.jpg",
+            "/assests/9.jpg",
+            "/assests/1.jpg"
+          ],
+          "nearby": [
+            "Downtown - 5 min",
+            "DIFC - 3 min",
+            "Dubai Mall - 10 min"
+          ]
         },
         {
           "id": "BB_D001",
@@ -330,10 +683,30 @@
           "price_usd": 1850000,
           "listing_type": "Buy",
           "status": "Ready",
-          "features": ["Canal View", "Double Height Living", "Balconies", "Modern Kitchen", "Storage"],
+          "features": [
+            "Canal View",
+            "Double Height Living",
+            "Balconies",
+            "Modern Kitchen",
+            "Storage"
+          ],
           "description": "Stylish 3-bedroom duplex with stunning canal views and modern urban lifestyle amenities.",
-          "amenities": ["Pool", "Gym", "Steam Room", "Retail Outlets"],
-          "nearby": ["Bay Avenue - 2 min", "Metro - 5 min", "Restaurants - Walking Distance"]
+          "amenities": [
+            "Pool",
+            "Gym",
+            "Steam Room",
+            "Retail Outlets"
+          ],
+          "images": [
+            "/assests/10.jpg",
+            "/assests/11.jpg",
+            "/assests/12.jpg"
+          ],
+          "nearby": [
+            "Bay Avenue - 2 min",
+            "Metro - 5 min",
+            "Restaurants - Walking Distance"
+          ]
         },
         {
           "id": "BB_A001",
@@ -348,10 +721,30 @@
           "listing_type": "Rent",
           "rent_annual_aed": 75000,
           "status": "Ready",
-          "features": ["City View", "Fitted Kitchen", "Wardrobe", "Balcony", "Parking"],
+          "features": [
+            "City View",
+            "Fitted Kitchen",
+            "Wardrobe",
+            "Balcony",
+            "Parking"
+          ],
           "description": "Compact 1-bedroom apartment perfect for professionals working in Business Bay or DIFC.",
-          "amenities": ["Pool", "Gym", "Security", "Retail Shops"],
-          "nearby": ["Business Bay Metro - 3 min", "Restaurants - Ground Floor", "DIFC - 5 min"]
+          "amenities": [
+            "Pool",
+            "Gym",
+            "Security",
+            "Retail Shops"
+          ],
+          "images": [
+            "/assests/13.jpg",
+            "/assests/14.jpg",
+            "/assests/15.jpg"
+          ],
+          "nearby": [
+            "Business Bay Metro - 3 min",
+            "Restaurants - Ground Floor",
+            "DIFC - 5 min"
+          ]
         },
         {
           "id": "BB_C001",
@@ -364,10 +757,31 @@
           "listing_type": "Lease",
           "lease_annual_aed": 750000,
           "status": "Ready",
-          "features": ["Fitted Office", "Conference Rooms", "Pantry", "Server Room", "Parking Spaces", "Premium Grade"],
+          "features": [
+            "Fitted Office",
+            "Conference Rooms",
+            "Pantry",
+            "Server Room",
+            "Parking Spaces",
+            "Premium Grade"
+          ],
           "description": "Grade A commercial office space in prestigious Business Bay with excellent connectivity and amenities.",
-          "amenities": ["High Speed Internet", "Central AC", "Security", "Reception"],
-          "nearby": ["Metro - 2 min", "DIFC - 5 min", "Downtown - 8 min"]
+          "amenities": [
+            "High Speed Internet",
+            "Central AC",
+            "Security",
+            "Reception"
+          ],
+          "images": [
+            "/assests/16.jpg",
+            "/assests/17.jpg",
+            "/assests/18.jpg"
+          ],
+          "nearby": [
+            "Metro - 2 min",
+            "DIFC - 5 min",
+            "Downtown - 8 min"
+          ]
         }
       ]
     },
@@ -388,10 +802,31 @@
           "price_usd": 4490000,
           "listing_type": "Buy",
           "status": "Ready",
-          "features": ["Golf Course View", "Private Pool", "Large Garden", "Maid Room", "Driver Room", "Smart Home"],
+          "features": [
+            "Golf Course View",
+            "Private Pool",
+            "Large Garden",
+            "Maid Room",
+            "Driver Room",
+            "Smart Home"
+          ],
           "description": "Stunning 5-bedroom villa overlooking the championship golf course with spacious interiors and family-friendly layout.",
-          "amenities": ["Golf Club Access", "Parks", "Community Pool", "Security"],
-          "nearby": ["Dubai Hills Mall - 5 min", "Golf Club - 2 min", "Schools - 3 min"]
+          "amenities": [
+            "Golf Club Access",
+            "Parks",
+            "Community Pool",
+            "Security"
+          ],
+          "images": [
+            "/assests/19.jpg",
+            "/assests/2.jpg",
+            "/assests/20.jpg"
+          ],
+          "nearby": [
+            "Dubai Hills Mall - 5 min",
+            "Golf Club - 2 min",
+            "Schools - 3 min"
+          ]
         },
         {
           "id": "DH_P001",
@@ -405,10 +840,30 @@
           "price_usd": 2313000,
           "listing_type": "Buy",
           "status": "Ready",
-          "features": ["Park View", "Private Terrace", "Premium Finishes", "Smart Home", "Storage Room"],
+          "features": [
+            "Park View",
+            "Private Terrace",
+            "Premium Finishes",
+            "Smart Home",
+            "Storage Room"
+          ],
           "description": "Elegant 3-bedroom penthouse with expansive terrace overlooking lush parks and golf greens.",
-          "amenities": ["Pool", "Gym", "Kids Play Area", "BBQ Area"],
-          "nearby": ["Dubai Hills Park - Walking Distance", "Mall - 8 min", "Restaurants - 5 min"]
+          "amenities": [
+            "Pool",
+            "Gym",
+            "Kids Play Area",
+            "BBQ Area"
+          ],
+          "images": [
+            "/assests/21.jpg",
+            "/assests/22.jpg",
+            "/assests/23.jpg"
+          ],
+          "nearby": [
+            "Dubai Hills Park - Walking Distance",
+            "Mall - 8 min",
+            "Restaurants - 5 min"
+          ]
         },
         {
           "id": "DH_D001",
@@ -423,10 +878,31 @@
           "listing_type": "Buy",
           "status": "Under Construction",
           "completion_date": "Q3 2026",
-          "features": ["Garden View", "Double Height", "Terrace", "Modern Design", "Study Room", "Storage"],
+          "features": [
+            "Garden View",
+            "Double Height",
+            "Terrace",
+            "Modern Design",
+            "Study Room",
+            "Storage"
+          ],
           "description": "Spacious 4-bedroom duplex perfect for families seeking space, greenery, and community living.",
-          "amenities": ["Community Pool", "Gym", "Parks", "Cycling Tracks"],
-          "nearby": ["Dubai Hills Mall - 10 min", "Schools - 5 min", "Medical Center - 3 min"]
+          "amenities": [
+            "Community Pool",
+            "Gym",
+            "Parks",
+            "Cycling Tracks"
+          ],
+          "images": [
+            "/assests/24.jpg",
+            "/assests/25.jpg",
+            "/assests/3.jpg"
+          ],
+          "nearby": [
+            "Dubai Hills Mall - 10 min",
+            "Schools - 5 min",
+            "Medical Center - 3 min"
+          ]
         },
         {
           "id": "DH_A001",
@@ -441,10 +917,30 @@
           "listing_type": "Rent",
           "rent_annual_aed": 95000,
           "status": "Ready",
-          "features": ["Park View", "Balcony", "Fitted Kitchen", "Wardrobes", "Parking"],
+          "features": [
+            "Park View",
+            "Balcony",
+            "Fitted Kitchen",
+            "Wardrobes",
+            "Parking"
+          ],
           "description": "Comfortable 2-bedroom apartment with park views, ideal for families and professionals.",
-          "amenities": ["Swimming Pool", "Gym", "Children's Play Area", "BBQ Area"],
-          "nearby": ["Dubai Hills Park - 2 min", "Mall - 7 min", "Supermarket - 3 min"]
+          "amenities": [
+            "Swimming Pool",
+            "Gym",
+            "Children's Play Area",
+            "BBQ Area"
+          ],
+          "images": [
+            "/assests/4.jpg",
+            "/assests/5.jpg",
+            "/assests/6.jpg"
+          ],
+          "nearby": [
+            "Dubai Hills Park - 2 min",
+            "Mall - 7 min",
+            "Supermarket - 3 min"
+          ]
         },
         {
           "id": "DH_C001",
@@ -457,10 +953,30 @@
           "listing_type": "Lease",
           "lease_annual_aed": 280000,
           "status": "Ready",
-          "features": ["Fitted", "Meeting Room", "Pantry", "Parking", "Modern Design"],
+          "features": [
+            "Fitted",
+            "Meeting Room",
+            "Pantry",
+            "Parking",
+            "Modern Design"
+          ],
           "description": "Professional office space in Dubai Hills Estate Business Park, perfect for SMEs and startups.",
-          "amenities": ["Parking", "Security", "Internet", "Central AC"],
-          "nearby": ["Dubai Hills Mall - 5 min", "Al Khail Road - 2 min", "Business Hub - Walking Distance"]
+          "amenities": [
+            "Parking",
+            "Security",
+            "Internet",
+            "Central AC"
+          ],
+          "images": [
+            "/assests/7.jpg",
+            "/assests/8.jpg",
+            "/assests/9.jpg"
+          ],
+          "nearby": [
+            "Dubai Hills Mall - 5 min",
+            "Al Khail Road - 2 min",
+            "Business Hub - Walking Distance"
+          ]
         }
       ]
     }

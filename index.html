@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dubai Real Estate GPT</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
             margin: 0;
@@ -27,7 +29,7 @@
             height: 90vh;
             background: white;
             border-radius: 20px;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
             display: flex;
             flex-direction: column;
             overflow: hidden;
@@ -90,8 +92,15 @@
         }
 
         @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         .message.user {
@@ -147,31 +156,91 @@
             color: #ffd700;
         }
 
-        .property-card {
-            background: #f8f9fa;
-            border: 1px solid #dee2e6;
-            border-radius: 12px;
-            padding: 15px;
+        .property-scroll-container {
+            display: flex;
+            overflow-x: auto;
+            gap: 14px;
+            padding: 12px 4px;
             margin-top: 12px;
+            scroll-snap-type: x mandatory;
+        }
+
+        .property-card {
+            min-width: 150px;
+            max-width: 150px;
+            height: 250px;
+            flex: 0 0 150px;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            scroll-snap-align: start;
+            border: 1px solid #f1f1f1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .property-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+        }
+
+        .property-card-bg {
+            width: 150px;
+            height: 150px;
+            min-height: 150px;
+            max-height: 150px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .property-card-content {
+            padding: 12px;
         }
 
         .property-card h4 {
-            color: #667eea;
-            margin-bottom: 8px;
-            font-size: 16px;
+            font-size: 14px;
+            font-weight: 700;
+            color: #222;
+            margin-bottom: 6px;
         }
 
-        .property-card p {
-            margin: 5px 0;
-            font-size: 14px;
-            color: #555;
+        .property-loc {
+            font-size: 12px;
+            color: #777;
+            margin-bottom: 10px;
+        }
+
+        .property-meta-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         .property-card .price {
-            color: #28a745;
-            font-weight: bold;
-            font-size: 16px;
+            font-size: 14px;
+            font-weight: 800;
+            color: #16a34a;
         }
+
+        .reserve-btn {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 6px 10px;
+            border-radius: 8px;
+            font-size: 11px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.15s ease;
+        }
+
+        .reserve-btn:hover {
+            transform: scale(1.05);
+        }
+
+
 
         .typing-indicator {
             display: none;
@@ -192,12 +261,25 @@
             animation: typing 1.4s infinite;
         }
 
-        .typing-indicator span:nth-child(2) { animation-delay: 0.2s; }
-        .typing-indicator span:nth-child(3) { animation-delay: 0.4s; }
+        .typing-indicator span:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .typing-indicator span:nth-child(3) {
+            animation-delay: 0.4s;
+        }
 
         @keyframes typing {
-            0%, 60%, 100% { transform: translateY(0); }
-            30% { transform: translateY(-10px); }
+
+            0%,
+            60%,
+            100% {
+                transform: translateY(0);
+            }
+
+            30% {
+                transform: translateY(-10px);
+            }
         }
 
         .chat-input-area {
@@ -269,6 +351,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="chat-container">
         <div class="chat-header">
@@ -281,7 +364,8 @@
         </div>
 
         <div class="quick-queries">
-            <button class="quick-query-btn" onclick="sendQuickQuery('What are property prices in Dubai?')">Property Prices</button>
+            <button class="quick-query-btn" onclick="sendQuickQuery('What are property prices in Dubai?')">Property
+                Prices</button>
             <button class="quick-query-btn" onclick="sendQuickQuery('Show me luxury villas')">Luxury Villas</button>
             <button class="quick-query-btn" onclick="sendQuickQuery('Best areas to invest')">Investment Areas</button>
             <button class="quick-query-btn" onclick="sendQuickQuery('Properties in my budget')">My Budget</button>
@@ -292,7 +376,8 @@
                 <div class="message-avatar">🤖</div>
                 <div class="message-content">
                     Welcome to Dubai Real Estate GPT! 👋<br><br>
-                    I'm your intelligent property advisor with comprehensive knowledge of Dubai's real estate market. I can help you with:<br><br>
+                    I'm your intelligent property advisor with comprehensive knowledge of Dubai's real estate market. I
+                    can help you with:<br><br>
                     ✅ Property searches and recommendations<br>
                     ✅ Market insights and pricing<br>
                     ✅ Personalized suggestions based on your profile<br>
@@ -303,7 +388,8 @@
         </div>
 
         <div class="chat-input-area">
-            <input type="text" id="userInput" placeholder="Ask me anything about Dubai real estate..." onkeypress="handleKeyPress(event)">
+            <input type="text" id="userInput" placeholder="Ask me anything about Dubai real estate..."
+                onkeypress="handleKeyPress(event)">
             <button id="sendBtn" onclick="sendMessage()">Send</button>
         </div>
     </div>
@@ -346,7 +432,7 @@
                 const response = await fetch('/chat', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ 
+                    body: JSON.stringify({
                         message: message,
                         user_type: currentUserType
                     })
@@ -414,4 +500,5 @@
         }
     </script>
 </body>
+
 </html>

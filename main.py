@@ -9,6 +9,13 @@ import requests
 
 app = Flask(__name__)
 
+# Serve files from the 'assests' directory
+@app.route('/assests/<path:filename>')
+def serve_assests(filename):
+    return send_from_directory('assests', filename)
+
+from flask import send_from_directory
+
 # Keep-Alive Mechanism for Render
 def keep_alive():
     url = os.environ.get('RENDER_EXTERNAL_URL')
@@ -390,25 +397,10 @@ def format_property_card(property_data, region_name, reasons=None):
     if 'lease_annual_aed' in prop:
         price_display += f" | Lease: AED {prop['lease_annual_aed']:,}/year"
 
-    bedrooms_display = f"{prop['bedrooms']} BR | " if 'bedrooms' in prop else ""
+    image_url = prop['images'][0] if 'images' in prop and prop['images'] else "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80"
+    
+    return f'<div class="property-card"><img src="{image_url}" class="property-card-bg" alt="{prop["name"]}"><div class="property-card-content"><h4>{prop["name"]}</h4><div class="property-loc">{region_name}</div><div class="property-meta-row"><span class="price">{price_display.split("|")[0].strip()}</span><button class="reserve-btn" onclick="event.stopPropagation(); alert(\'Booking started for {prop["name"]}!\')">Book Now</button></div></div></div>'
 
-    status_emoji = "✅" if prop['status'] == 'Ready' else "🏗️"
-
-    features_list = ', '.join(prop['features'][:4]) if 'features' in prop else ''
-
-    reasons_html = ""
-    if reasons:
-        reasons_html = f"<p><strong>Why this matches:</strong> {', '.join(reasons[:3])}</p>"
-
-    return f"""
-    <div class="property-card">
-        <h4>{status_emoji} {prop['name']} - {region_name}</h4>
-        <p><strong>{prop['type']}</strong> | {bedrooms_display}{prop['area_sqft']} sqft | <span class="price">{price_display}</span></p>
-        <p>{prop['description'][:120]}...</p>
-        <p><strong>Features:</strong> {features_list}</p>
-        {reasons_html}
-    </div>
-    """
 
 
 @app.route('/')
@@ -466,7 +458,7 @@ INSTRUCTIONS:
 5. Use natural, varied conversational tone (avoid repetitive patterns)
 6. Be proactive with follow-up questions and suggestions
 7. Format property recommendations clearly
-8. Keep responses concise but informative (300-500 words max)
+8. Keep responses extremely concise. If showing property cards, limit intro text to under 30 words.
 9. Use emojis sparingly for better readability
 10. ALWAYS end with a probing question or actionable suggestion
 
@@ -482,17 +474,18 @@ RESPONSE:
 
 
         # If properties matched, append property cards
-        if property_matches and any(keyword in user_message.lower() for keyword in ['show', 'find', 'recommend', 'suggest', 'looking for', 'villa', 'penthouse', 'apartment', 'duplex', 'office']):
-            properties_html = ""
-            for match in property_matches[:4]:  # Show top 4
+        if property_matches and any(keyword in user_message.lower() for keyword in ['show', 'find', 'recommend', 'suggest', 'looking for', 'villa', 'penthouse', 'apartment', 'duplex', 'office', 'latest', 'price']):
+            properties_html = '<div class="property-scroll-container">'
+            for match in property_matches[:3]:  # Show top 3 in scroll
                 properties_html += format_property_card(
                     match['property'],
                     match['region'],
                     match['reasons'] if user_type == 'registered' else None
                 )
+            properties_html += '</div>'
 
             if properties_html:
-                ai_response += f"\n\n<strong>Here are some properties that match your criteria:</strong>\n{properties_html}"
+                ai_response += f"\n\n<strong>I found these options for you (swipe to explore):</strong>\n{properties_html}"
 
         return jsonify({'response': ai_response})
 
