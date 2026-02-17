@@ -1288,42 +1288,71 @@
             display: flex !important;
             flex-direction: row !important;
             overflow-x: auto !important;
-            gap: 15px !important;
-            padding: 15px 5px !important;
+            gap: 20px !important;
+            padding: 15px 5px 25px 5px !important;
             margin-top: 15px !important;
             scroll-snap-type: x mandatory !important;
             width: 100% !important;
-            border: 2px dashed #3b82f6 !important;
-            background: rgba(59, 130, 246, 0.05) !important;
+            scrollbar-width: auto !important;
+            /* Firefox */
+            scrollbar-color: #3b82f6 #f1f5f9 !important;
+            /* Firefox */
+        }
+
+        /* Custom scrollbar for Webkit (Chrome, Safari, Edge) */
+        .property-scroll-container::-webkit-scrollbar {
+            height: 10px !important;
+            display: block !important;
+        }
+
+        .property-scroll-container::-webkit-scrollbar-track {
+            background: #f1f5f9 !important;
+            border-radius: 10px !important;
+        }
+
+        .property-scroll-container::-webkit-scrollbar-thumb {
+            background: #3b82f6 !important;
+            border-radius: 10px !important;
+            border: 2px solid #f1f5f9 !important;
+        }
+
+        .property-scroll-container::-webkit-scrollbar-thumb:hover {
+            background: #1e40af !important;
         }
 
         .property-card {
-            min-width: 180px !important;
-            max-width: 180px !important;
-            width: 180px !important;
-            height: 310px !important;
-            flex: 0 0 180px !important;
+            min-width: 260px !important;
+            max-width: 260px !important;
+            width: 260px !important;
+            height: 400px !important;
+            flex: 0 0 260px !important;
             background: #ffffff !important;
-            border-radius: 15px !important;
+            border-radius: 20px !important;
             overflow: hidden !important;
-            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12) !important;
             border: 1px solid #e2e8f0 !important;
             display: flex !important;
             flex-direction: column !important;
             margin: 0 !important;
+            scroll-snap-align: start !important;
+            transition: transform 0.3s ease !important;
+        }
+
+        .property-card:hover {
+            transform: translateY(-5px) !important;
         }
 
         .property-card-bg {
-            width: 180px !important;
-            height: 180px !important;
-            min-height: 180px !important;
-            max-height: 180px !important;
+            width: 260px !important;
+            height: 220px !important;
+            min-height: 220px !important;
+            max-height: 220px !important;
             object-fit: cover !important;
             display: block !important;
         }
 
         .property-card-content {
-            padding: 12px !important;
+            padding: 15px !important;
             flex-grow: 1 !important;
             display: flex !important;
             flex-direction: column !important;

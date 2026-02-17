@@ -461,6 +461,7 @@ INSTRUCTIONS:
 8. Keep responses extremely concise. If showing property cards, limit intro text to under 30 words.
 9. Use emojis sparingly for better readability
 10. ALWAYS end with a probing question or actionable suggestion
+11. PLEASE AVOID USING MARKDOWN (no stars, no underscores, no bold, no italics). Use plain text only.
 
 RESPONSE:
 """
@@ -472,11 +473,18 @@ RESPONSE:
         )
         ai_response = response.text
 
+        # CLEANUP: Remove markdown formatting if any remains
+        import re
+        ai_response = re.sub(r'\*\*(.*?)\*\*', r'\1', ai_response) # Remove bold
+        ai_response = re.sub(r'\*(.*?)\*', r'\1', ai_response) # Remove italics
+        ai_response = re.sub(r'#+\s*(.*)', r'\1', ai_response) # Remove headers
+        ai_response = ai_response.replace('**', '').replace('*', '').replace('___', '').replace('__', '')
+
 
         # If properties matched, append property cards
         if property_matches and any(keyword in user_message.lower() for keyword in ['show', 'find', 'recommend', 'suggest', 'looking for', 'villa', 'penthouse', 'apartment', 'duplex', 'office', 'latest', 'price']):
             properties_html = '<div class="property-scroll-container">'
-            for match in property_matches[:3]:  # Show top 3 in scroll
+            for match in property_matches[:6]:  # Show top 6 in scroll
                 properties_html += format_property_card(
                     match['property'],
                     match['region'],
