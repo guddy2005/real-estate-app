@@ -379,6 +379,9 @@
             font-size: 15px;
             line-height: 1.6;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            min-width: 0;
+            /* Critical for containing scroll children */
+            word-wrap: break-word;
         }
 
         .message.ai .msg-bubble {
@@ -1293,10 +1296,13 @@
             margin-top: 15px !important;
             scroll-snap-type: x mandatory !important;
             width: 100% !important;
+            max-width: 100% !important;
             scrollbar-width: auto !important;
             /* Firefox */
             scrollbar-color: #3b82f6 #f1f5f9 !important;
             /* Firefox */
+            -webkit-overflow-scrolling: touch !important;
+            /* Smooth scrolling on mobile */
         }
 
         /* Custom scrollbar for Webkit (Chrome, Safari, Edge) */
@@ -1336,6 +1342,22 @@
             margin: 0 !important;
             scroll-snap-align: start !important;
             transition: transform 0.3s ease !important;
+        }
+
+        @media (max-width: 480px) {
+            .property-card {
+                min-width: 220px !important;
+                max-width: 220px !important;
+                width: 220px !important;
+                flex: 0 0 220px !important;
+            }
+
+            .property-card-bg {
+                width: 220px !important;
+                height: 180px !important;
+                min-height: 180px !important;
+                max-height: 180px !important;
+            }
         }
 
         .property-card:hover {
